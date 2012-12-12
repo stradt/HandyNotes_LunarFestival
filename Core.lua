@@ -8,7 +8,7 @@
 
 
 -- declaration
-local ID, LunarFestival = ...
+local _, LunarFestival = ...
 LunarFestival.points = {}
 
 
@@ -201,7 +201,7 @@ local options = {
 function LunarFestival:OnEnable()
 	local _, month, day, year = CalendarGetDate()
 
-	if month == 10 and (day >= 18 and day <= 31) then
+	if ( month == 1 and day >= 20 ) and ( month == 2 and day <= 9 ) then
 		HandyNotes:RegisterPluginDB("LunarFestival", self, options)
 		self:RegisterEvent("QUEST_FINISHED", "Refresh")
 
@@ -217,4 +217,4 @@ end
 
 
 -- activate
-LunarFestival = LibStub("AceAddon-3.0"):NewAddon(LunarFestival, ID, "AceEvent-3.0")
+LibStub("AceAddon-3.0"):NewAddon(LunarFestival, "HandyNotes_LunarFestival", "AceEvent-3.0")
