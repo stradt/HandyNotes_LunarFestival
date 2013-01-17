@@ -23,6 +23,7 @@ local _G = getfenv(0)
 local CalendarGetDate = _G.CalendarGetDate
 local CloseDropDownMenus = _G.CloseDropDownMenus
 local GameTooltip = _G.GameTooltip
+local GetAchievementCriteriaInfo = _G.GetAchievementCriteriaInfo
 local IsQuestFlaggedCompleted = _G.IsQuestFlaggedCompleted
 local LibStub = _G.LibStub
 local next = _G.next
@@ -40,6 +41,14 @@ local TomTom = _G.TomTom
 
 
 -- plugin handler for HandyNotes
+local function infoFromCoord(mapFile, coord)
+	local point = LunarFestival.points[mapFile] and LunarFestival.points[mapFile][coord]
+
+	if point then
+		return GetAchievementCriteriaInfo(point[2], point[3])
+	end
+end
+
 function LunarFestival:OnEnter(mapFile, coord)
 	local tooltip = self:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
 
@@ -49,7 +58,9 @@ function LunarFestival:OnEnter(mapFile, coord)
 		tooltip:SetOwner(self, "ANCHOR_RIGHT")
 	end
 
-	tooltip:SetText("Lunar Festival Elder")
+	local nameOfElder = infoFromCoord(mapFile, coord)
+
+	tooltip:SetText(nameOfElder or "Lunar Festival NPC")
 	tooltip:Show()
 end
 
@@ -65,10 +76,12 @@ local function createWaypoint(button, mapFile, coord)
 	local c, z = HandyNotes:GetCZ(mapFile)
 	local x, y = HandyNotes:getXY(coord)
 
+	local nameOfElder = infoFromCoord(mapFile, coord)
+
 	if TomTom then
-		TomTom:AddZWaypoint(c, z, x * 100, y * 100, "Lunar Festival Elder")
+		TomTom:AddZWaypoint(c, z, x * 100, y * 100, nameOfElder or "Lunar Festival NPC")
 	elseif Cartographer_Waypoints then
-		Cartographer_Waypoints:AddWaypoint( NotePoint:new(HandyNotes:GetCZToZone(c, z), x, y, "Lunar Festival Elder") )
+		Cartographer_Waypoints:AddWaypoint( NotePoint:new(HandyNotes:GetCZToZone(c, z), x, y, nameOfElder or "Lunar Festival NPC") )
 	end
 end
 
@@ -137,7 +150,7 @@ do
 		local state, value = next(t, prestate)
 
 		while state do -- have we reached the end of this zone?
-			if value and (db.completed or not IsQuestFlaggedCompleted(value)) then
+			if value and (db.completed or not IsQuestFlaggedCompleted(value[1])) then
 				return state, nil, "interface\\icons\\spell_holy_symbolofhope", db.icon_scale, db.icon_alpha
 			end
 
