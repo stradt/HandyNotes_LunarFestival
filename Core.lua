@@ -214,7 +214,7 @@ local options = {
 function LunarFestival:OnEnable()
 	local _, month, day, year = CalendarGetDate()
 
-	if ( month == 1 and day >= 20 ) and ( month == 2 and day <= 9 ) then
+	if ( month == 1 and day >= 27 ) and ( month == 2 and day <= 9 ) then
 		HandyNotes:RegisterPluginDB("LunarFestival", self, options)
 		self:RegisterEvent("QUEST_FINISHED", "Refresh")
 
