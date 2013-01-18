@@ -175,6 +175,28 @@ points["ZulDrak"] = {
 }
 
 -- Cataclysm
+points["Deepholm"] = {
+	[27706920] = { 29734, 6006, 9 }, -- Elder Deepforge
+	[49705490] = { 29735, 6006, 1 }, -- Elder Stonebrand
+}
 
+points["Hyjal"] = {
+	[26706200] = { 29739, 6006, 6 }, -- Elder Windsong
+	[62502280] = { 29740, 6006, 7 }, -- Elder Evershade
+}
+
+points["TwilightHighlands"] = {
+	[50907050] = { 29737, 6006, 4 }, -- Elder Firebeard
+	[51903310] = { 29736, 6006, 5 }, -- Elder Darkfeather
+}
+
+points["Uldum"] = {
+	[32606300] = { 29741, 6006, 3 }, -- Elder Sekhemi
+	[65501870] = { 29742, 6006, 2 }, -- Elder Menkhaf
+}
+
+points["VashjirRuins"] = {
+	[57308620] = { 29738, 6006, 8 }, -- Elder Moonlance
+}
 
 -- Pandaria
