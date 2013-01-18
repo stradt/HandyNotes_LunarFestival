@@ -129,7 +129,7 @@ points["Maraudon"] = {
 }
 
 points["Mulgore"] = {
-	[58405320] = { 8673, 911, 8 }, -- Elder Bloodhoof
+	[48305340] = { 8673, 911, 8 }, -- Elder Bloodhoof
 }
 
 points["Orgrimmar"] = {
