@@ -135,7 +135,44 @@ points["Winterspring"] = {
 
 
 -- Northrend
+points["BoreanTundra"] = {
+	[33813437] = { 13016, 1396, 6 }, -- Elder Northal
+	[42934958] = { 13029, 1396, 15 }, -- Elder Pamuya
+	[57394373] = { 13033, 1396, 5 }, -- Elder Arp
+	[59106560] = { 13012, 1396, 1 }, -- Elder Sardis
+}
 
+points["Dragonblight"] = {
+	[29905610] = { 13014, 1396, 3 }, -- Elder Morthie
+	[35104835] = { 13031, 1396, 17 }, -- Elder Skywarden
+	[48767818] = { 13019, 1396, 12 }, -- Elder Thoim
+}
+
+points["GrizzlyHills"] = {
+	[60532764] = { 13013, 1396, 2 }, -- Elder Beldak
+	[64164700] = { 13030, 1396, 16 }, -- Elder Whurain
+	[80523712] = { 13025, 1396, 9 }, -- Elder Lunaro
+}
+
+points["LakeWintergrasp"] = {
+	[49001390] = { 13026, 1396, 10 }, -- Elder Bluewolf
+}
+
+points["SholazarBasin"] = {
+	[49786363] = { 13018, 1396, 7 }, -- Elder Sandrene
+	[63804902] = { 13024, 1396, 8 }, -- Elder Wanikaya
+}
+
+points["TheStormPeaks"] = {
+	[28897371] = { 13015, 1396, 4 }, -- Elder Fargal
+	[31103740] = { 13020, 1396, 14 }, -- Elder Stonebeard
+	[41008400] = { 13028, 1396, 13 }, -- Elder Graymane
+	[64595134] = { 13032, 1396, 18 }, -- Elder Muraco
+}
+
+points["ZulDrak"] = {
+	[58915597] = { 13027, 1396, 11 }, -- Elder Tauros
+}
 
 -- Cataclysm
 
