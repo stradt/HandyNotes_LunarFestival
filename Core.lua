@@ -90,6 +90,11 @@ do
 	local info = {}
 	local currentZone, currentCoord
 
+	local function close()
+		-- we call it here to avoid "for initial value must be a number" errors
+		CloseDropDownMenus()
+	end
+
 	local function generateMenu(button, level)
 		if not level then return end
 
@@ -120,8 +125,9 @@ do
 			-- close menu item
 			info.text = "Close"
 			info.icon = nil
-			info.func = CloseDropDownMenus
+			info.func = close
 			info.arg1 = nil
+			info.arg2 = nil
 			info.notCheckable = 1
 
 			UIDropDownMenu_AddButton(info, level)
