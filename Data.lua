@@ -5,6 +5,14 @@ local points = LunarFestival.points
 
 
 -- Eastern Kingdoms
+points["BlackrockCaverns"] = {
+	[50506270] = { 8619, 910, 5 }, -- Elder Morndeep
+}
+
+points["BlackrockSpire"] = {
+	[47646887] = { 8644, 910, 4 }, -- Elder Stonefort
+}
+
 points["BlastedLands"] = {
 	[54304950] = { 8647, 912, 2 }, -- Elder Bellowrage
 }
@@ -52,8 +60,16 @@ points["StranglethornJungle"] = {
 	[71003400] = { 8716, 912, 5 }, -- Elder Starglade
 }
 
+points["Stratholme"] = {
+	[78302050] = { 8727, 910, 6 }, -- Elder Farwhisper
+}
+
 points["TheCapeOfStranglethorn"] = {
 	[40007250] = { 8674, 912, 6 }, -- Elder Winterhoof
+}
+
+points["TheTempleOfAtalHakkar"] = {
+	[62003400] = { 8713, 910, 2 }, -- Elder Starsong
 }
 
 points["Tirisfal"] = {
@@ -108,6 +124,10 @@ points["Felwood"] = {
 	[38305280] = { 8723, 911, 12 }, -- Elder Nightwind
 }
 
+points["Maraudon"] = {
+	[52309220] = { 8635, 910, 3 }, -- Elder Splitrock
+}
+
 points["Mulgore"] = {
 	[58405320] = { 8673, 911, 8 }, -- Elder Bloodhoof
 }
@@ -152,10 +172,18 @@ points["Winterspring"] = {
 	[59904990] = { 8672, 911, 19 }, -- Elder Stonespire
 }
 
+points["ZulFarrak"] = {
+	[41804460] = { 8676, 910, 1 }, -- Elder Wildmane
+}
+
 -- Outland
 
 
 -- Northrend
+points["AzjolNerub"] = {
+	[22004340] = { 13022, 910, 9 }, -- Elder Nurgen
+}
+
 points["BoreanTundra"] = {
 	[33813437] = { 13016, 1396, 6 }, -- Elder Northal
 	[42934958] = { 13029, 1396, 15 }, -- Elder Pamuya
@@ -169,10 +197,18 @@ points["Dragonblight"] = {
 	[48767818] = { 13019, 1396, 12 }, -- Elder Thoim
 }
 
+points["DrakTharonKeep"] = {
+	[68608090] = { 13023, 910, 10 }, -- Elder Kilias
+}
+
 points["GrizzlyHills"] = {
 	[60532764] = { 13013, 1396, 2 }, -- Elder Beldak
 	[64164700] = { 13030, 1396, 16 }, -- Elder Whurain
 	[80523712] = { 13025, 1396, 9 }, -- Elder Lunaro
+}
+
+points["Gundrak"] = {
+	[46806190] = { 13065, 910, 11 }, -- Elder Ohanzee
 }
 
 points["LakeWintergrasp"] = {
@@ -184,11 +220,27 @@ points["SholazarBasin"] = {
 	[63804902] = { 13024, 1396, 8 }, -- Elder Wanikaya
 }
 
+points["TheNexus"] = {
+	[55106460] = { 13021, 910, 8 }, -- Elder Igasho
+}
+
 points["TheStormPeaks"] = {
 	[28897371] = { 13015, 1396, 4 }, -- Elder Fargal
 	[31103740] = { 13020, 1396, 14 }, -- Elder Stonebeard
 	[41008400] = { 13028, 1396, 13 }, -- Elder Graymane
 	[64595134] = { 13032, 1396, 18 }, -- Elder Muraco
+}
+
+points["Ulduar77"] = { -- Halls of Stone
+	[29106090] = { 13066, 910, 12 }, -- Elder Yurauk
+}
+
+points["UtgardeKeep"] = {
+	[47507080] = { 13017, 910, 7 }, -- Elder Jarten
+}
+
+points["UtgardePinnacle"] = {
+	[48102310] = { 13067, 910, 13 }, -- Elder Chogan'gada
 }
 
 points["ZulDrak"] = {
