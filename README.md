@@ -5,7 +5,7 @@ HandyNotes - The Lunar Festival
 What it does
 ------------
 
-This addon displays locations of unvisited Elders on the worldmap and minimap while the Lunar Festival is active (20th January - 9th February).
+This addon displays locations of unvisited Elders on the worldmap and minimap while the Lunar Festival is active (27th January - 9th February).
 If you also have TomTom or Cartographer installed, you can right-click on a marker to create a Waypoint arrow.
 
 This addon is the successor to [TourGuide - The Lunar Festival](https://github.com/EthanCentaurai/TourGuide_LunarFestival), re-written as a HandyNotes plug-in due to TourGuide being broken and abandoned.
