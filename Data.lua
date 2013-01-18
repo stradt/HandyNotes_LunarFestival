@@ -24,11 +24,16 @@ points["EasternPlaguelands"] = {
 }
 
 points["Elwynn"] = {
+	[34005000] = { 8646, 915, 3 }, -- Elder Hammershout
 	[40006300] = { 8649, 912, 3 }, -- Elder Stormbrow
 }
 
 points["Hinterlands"] = {
 	[50004800] = { 8643, 912, 11 }, -- Elder Highpeak
+}
+
+points["Ironforge"] = {
+	[29001700] = { 8866, 915, 2 }, -- Elder Bronzebeard
 }
 
 points["LochModan"] = {
@@ -53,6 +58,10 @@ points["TheCapeOfStranglethorn"] = {
 
 points["Tirisfal"] = {
 	[61005300] = { 8652, 912, 13 }, -- Elder Graveborn
+}
+
+points["Undercity"] = {
+	[66003800] = { 8648, 914, 3 }, -- Elder Darkcore
 }
 
 points["WesternPlaguelands"] = {
@@ -82,6 +91,10 @@ points["Darkshore"] = {
 	[49501890] = { 8721, 911, 7 }, -- Elder Starweave
 }
 
+points["Darnassus"] = {
+	[39203190] = { 8718, 915, 1 }, -- Elder Bladeswift
+}
+
 points["Durotar"] = {
 	[53204360] = { 8670, 911, 1 }, -- Elder Runetotem
 }
@@ -97,6 +110,10 @@ points["Felwood"] = {
 
 points["Mulgore"] = {
 	[58405320] = { 8673, 911, 8 }, -- Elder Bloodhoof
+}
+
+points["Orgrimmar"] = {
+	[53205980] = { 8677, 914, 1 }, -- Elder Darkhorn
 }
 
 points["Silithus"] = {
@@ -120,6 +137,10 @@ points["Teldrassil"] = {
 points["ThousandNeedles"] = {
 	[46305100] = { 8682, 911, 13 }, -- Elder Skyseer
 	[77007560] = { 9724, 911, 14 }, -- Elder Morningdew
+}
+
+points["ThunderBluff"] = {
+	[72662348] = { 8678, 914, 2 }, -- Elder Wheathoof
 }
 
 points["UngoroCrater"] = {
