@@ -157,7 +157,7 @@ do
 
 		while state do -- have we reached the end of this zone?
 			if value and (db.completed or not IsQuestFlaggedCompleted(value[1])) then
-				return state, nil, "interface\\icons\\spell_holy_symbolofhope", db.icon_scale, db.icon_alpha
+				return state, nil, "interface\\icons\\inv_misc_elvencoins", db.icon_scale, db.icon_alpha
 			end
 
 			state, value = next(t, state) -- get next data
