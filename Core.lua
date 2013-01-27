@@ -20,7 +20,6 @@ local defaults = { profile = { completed = false, icon_scale = 1.4, icon_alpha =
 -- upvalues
 local _G = getfenv(0)
 
-local CalendarGetDate = _G.CalendarGetDate
 local CloseDropDownMenus = _G.CloseDropDownMenus
 local GameTooltip = _G.GameTooltip
 local GetAchievementCriteriaInfo = _G.GetAchievementCriteriaInfo
@@ -218,16 +217,10 @@ local options = {
 
 -- initialise
 function LunarFestival:OnEnable()
-	local _, month, day, year = CalendarGetDate()
+	HandyNotes:RegisterPluginDB("LunarFestival", self, options)
+	self:RegisterEvent("QUEST_FINISHED", "Refresh")
 
-	if ( month == 1 and day >= 27 ) and ( month == 2 and day <= 9 ) then
-		HandyNotes:RegisterPluginDB("LunarFestival", self, options)
-		self:RegisterEvent("QUEST_FINISHED", "Refresh")
-
-		db = LibStub("AceDB-3.0"):New("HandyNotes_LunarFestivalDB", defaults, "Default").profile
-	else
-		self:Disable()
-	end
+	db = LibStub("AceDB-3.0"):New("HandyNotes_LunarFestivalDB", defaults, "Default").profile
 end
 
 function LunarFestival:Refresh()
