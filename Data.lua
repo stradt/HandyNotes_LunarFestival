@@ -1,4 +1,3 @@
-
 local _, LunarFestival = ...
 local points = LunarFestival.points
 -- points[<mapfile>] = { [<coordinates>] = { <quest ID>, <achievement ID>, <achievement criteria ID> } }
@@ -100,7 +99,7 @@ points["Aszhara"] = {
 
 points["Barrens"] = {
 	[48505920] = { 8717, 911, 3 }, -- Elder Moonwarden
-	[68305990] = { 8680, 911, 5 }, -- Elder Windtotem
+	[68006900] = { 8680, 911, 5 }, -- Elder Windtotem
 }
 
 points["Darkshore"] = {
@@ -137,7 +136,7 @@ points["Orgrimmar"] = {
 }
 
 points["Silithus"] = {
-	[30800330] = { 8654, 911, 20 }, -- Elder Primestone
+	[30001300] = { 8654, 911, 20 }, -- Elder Primestone
 	[53003540] = { 8719, 911, 21 }, -- Elder Bladesing
 }
 
