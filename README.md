@@ -5,7 +5,7 @@ HandyNotes - The Lunar Festival
 What it does
 ------------
 
-This addon displays locations of unvisited Elders on the worldmap and minimap while the Lunar Festival is active (27th January - 9th February).
+This addon displays locations of unvisited Elders on the worldmap and minimap.
 If you also have TomTom or Cartographer installed, you can right-click on a marker to create a Waypoint arrow.
 
 This addon is the successor to [TourGuide - The Lunar Festival](https://github.com/EthanCentaurai/TourGuide_LunarFestival), re-written as a HandyNotes plug-in due to TourGuide being broken and abandoned.
@@ -41,7 +41,7 @@ If you have any comments, bug reports or feature requests, please leave a commen
 About the Author
 ----------------
 
-This addon was lovingly made by Ethan Centaurai, who usually plays as [Ulbrecht](http://eu.battle.net/wow/en/character/ghostlands/ulbrecht/simple) on Ghostlands-EU.
+This addon was lovingly made by Ethan Centaurai, who usually plays as [Ysaera](http://eu.battle.net/wow/en/character/ghostlands/ysaera/simple) on Ghostlands-EU.
 
 * Visit my [website](http://www.ethancentaurai.com/).
 * Follow me on [Twitter](http://twitter.com/StevenBlanchard).
