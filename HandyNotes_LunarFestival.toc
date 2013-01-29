@@ -7,5 +7,5 @@
 ## SavedVariables: HandyNotes_LunarFestivalDB
 ## RequiredDeps: HandyNotes
 
-Core.lua
 Data.lua
+Core.lua

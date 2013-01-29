@@ -9,7 +9,8 @@
 
 -- declaration
 local _, LunarFestival = ...
-LunarFestival.points = {}
+
+local points = LunarFestival.points
 
 
 -- our db and defaults
@@ -41,7 +42,7 @@ local TomTom = _G.TomTom
 
 -- plugin handler for HandyNotes
 local function infoFromCoord(mapFile, coord)
-	local point = LunarFestival.points[mapFile] and LunarFestival.points[mapFile][coord]
+	local point = points[mapFile] and points[mapFile][coord]
 
 	if point then
 		return GetAchievementCriteriaInfo(point[2], point[3])
@@ -90,7 +91,7 @@ do
 	local currentZone, currentCoord
 
 	local function close()
-		-- we call it here to avoid "for initial value must be a number" errors
+		-- we call it here to avoid "initial for value must be a number" errors
 		CloseDropDownMenus()
 	end
 
@@ -166,7 +167,7 @@ do
 	end
 
 	function LunarFestival:GetNodes(mapFile)
-		return iter, self.points[mapFile], nil
+		return iter, points[mapFile], nil
 	end
 end
 

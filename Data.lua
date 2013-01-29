@@ -1,4 +1,7 @@
+
 local _, LunarFestival = ...
+LunarFestival.points = {}
+
 local points = LunarFestival.points
 -- points[<mapfile>] = { [<coordinates>] = { <quest ID>, <achievement ID>, <achievement criteria ID> } }
 
@@ -88,6 +91,7 @@ points["Westfall"] = {
 	[56604710] = { 8675, 912, 8 }, -- Elder Skychaser
 }
 
+
 -- Kalimdor
 points["Ashenvale"] = {
 	[35504890] = { 8725, 911, 9 }, -- Elder Riversong
@@ -175,6 +179,7 @@ points["ZulFarrak"] = {
 	[41804460] = { 8676, 910, 1 }, -- Elder Wildmane
 }
 
+
 -- Outland
 
 
@@ -246,6 +251,7 @@ points["ZulDrak"] = {
 	[58915597] = { 13027, 1396, 11 }, -- Elder Tauros
 }
 
+
 -- Cataclysm
 points["Deepholm"] = {
 	[27706920] = { 29734, 6006, 9 }, -- Elder Deepforge
@@ -270,5 +276,6 @@ points["Uldum"] = {
 points["VashjirRuins"] = {
 	[57308620] = { 29738, 6006, 8 }, -- Elder Moonlance
 }
+
 
 -- Pandaria
