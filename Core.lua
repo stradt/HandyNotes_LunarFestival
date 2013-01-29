@@ -24,6 +24,7 @@ local _G = getfenv(0)
 local CloseDropDownMenus = _G.CloseDropDownMenus
 local GameTooltip = _G.GameTooltip
 local GetAchievementCriteriaInfo = _G.GetAchievementCriteriaInfo
+local gsub = _G.string.gsub
 local IsQuestFlaggedCompleted = _G.IsQuestFlaggedCompleted
 local LibStub = _G.LibStub
 local next = _G.next
@@ -42,6 +43,8 @@ local TomTom = _G.TomTom
 
 -- plugin handler for HandyNotes
 local function infoFromCoord(mapFile, coord)
+	mapFile = gsub(mapFile, "_terrain%d+$", "")
+
 	local point = points[mapFile] and points[mapFile][coord]
 
 	if point then
@@ -140,6 +143,8 @@ do
 
 	function LunarFestival:OnClick(button, down, mapFile, coord)
 		if button == "RightButton" and not down then
+			mapFile = gsub(mapFile, "_terrain%d+$", "")
+
 			nameOfElder = infoFromCoord(mapFile, coord)
 			currentZone = mapFile
 			currentCoord = coord
@@ -168,6 +173,7 @@ do
 	end
 
 	function LunarFestival:GetNodes(mapFile)
+		mapFile = gsub(mapFile, "_terrain%d+$", "")
 		return iter, points[mapFile], nil
 	end
 end
