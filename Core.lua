@@ -60,7 +60,7 @@ function LunarFestival:OnEnter(mapFile, coord)
 
 	local nameOfElder = infoFromCoord(mapFile, coord)
 
-	tooltip:SetText(nameOfElder or "Lunar Festival NPC")
+	tooltip:SetText(nameOfElder)
 	tooltip:Show()
 end
 
@@ -79,16 +79,16 @@ local function createWaypoint(button, mapFile, coord)
 	local nameOfElder = infoFromCoord(mapFile, coord)
 
 	if TomTom then
-		TomTom:AddZWaypoint(c, z, x * 100, y * 100, nameOfElder or "Lunar Festival NPC")
+		TomTom:AddZWaypoint(c, z, x * 100, y * 100, nameOfElder)
 	elseif Cartographer_Waypoints then
-		Cartographer_Waypoints:AddWaypoint( NotePoint:new(HandyNotes:GetCZToZone(c, z), x, y, nameOfElder or "Lunar Festival NPC") )
+		Cartographer_Waypoints:AddWaypoint( NotePoint:new(HandyNotes:GetCZToZone(c, z), x, y, nameOfElder) )
 	end
 end
 
 do
 	-- context menu generator
 	local info = {}
-	local currentZone, currentCoord
+	local currentZone, currentCoord, nameOfElder
 
 	local function close()
 		-- we call it here to avoid "initial for value must be a number" errors
@@ -103,7 +103,7 @@ do
 		if level == 1 then
 			-- create the title of the menu
 			info.isTitle = 1
-			info.text = "HandyNotes - Lunar Festival"
+			info.text = nameOfElder
 			info.notCheckable = 1
 
 			UIDropDownMenu_AddButton(info, level)
@@ -140,6 +140,7 @@ do
 
 	function LunarFestival:OnClick(button, down, mapFile, coord)
 		if button == "RightButton" and not down then
+			nameOfElder = infoFromCoord(mapFile, coord)
 			currentZone = mapFile
 			currentCoord = coord
 
