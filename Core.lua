@@ -143,8 +143,6 @@ do
 
 	function LunarFestival:OnClick(button, down, mapFile, coord)
 		if button == "RightButton" and not down then
-			mapFile = gsub(mapFile, "_terrain%d+$", "")
-
 			nameOfElder = infoFromCoord(mapFile, coord)
 			currentZone = mapFile
 			currentCoord = coord
