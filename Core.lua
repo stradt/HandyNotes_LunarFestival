@@ -9,7 +9,6 @@
 
 -- declaration
 local _, LunarFestival = ...
-
 local points = LunarFestival.points
 
 
@@ -142,10 +141,12 @@ do
 	dropdown.initialize = generateMenu
 
 	function LunarFestival:OnClick(button, down, mapFile, coord)
+
 		if button == "RightButton" and not down then
-			nameOfElder = infoFromCoord(mapFile, coord)
 			currentZone = mapFile
 			currentCoord = coord
+
+			nameOfElder = infoFromCoord(mapFile, coord)
 
 			ToggleDropDownMenu(1, nil, dropdown, self, 0, 0)
 		end
@@ -170,7 +171,7 @@ do
 		return nil, nil, nil, nil
 	end
 
-	function LunarFestival:GetNodes(mapFile)
+	function LunarFestival:GetNodes(mapFile, isMinimapUpdate, dungeonLevel)
 		mapFile = gsub(mapFile, "_terrain%d+$", "")
 		return iter, points[mapFile], nil
 	end
