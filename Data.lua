@@ -7,7 +7,7 @@ local points = LunarFestival.points
 
 
 -- Eastern Kingdoms
-points["BlackrockCaverns"] = {
+points["BlackrockDepths"] = {
 	[50506270] = { 8619, 910, 5 }, -- Elder Morndeep
 }
 
