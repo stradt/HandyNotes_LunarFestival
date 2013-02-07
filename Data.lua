@@ -159,7 +159,7 @@ points["Teldrassil"] = {
 
 points["ThousandNeedles"] = {
 	[46305100] = { 8682, 911, 13 }, -- Elder Skyseer
-	[77007560] = { 9724, 911, 14 }, -- Elder Morningdew
+	[77007560] = { 8724, 911, 14 }, -- Elder Morningdew
 }
 
 points["ThunderBluff"] = {
