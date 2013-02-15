@@ -75,6 +75,7 @@ points["TheTempleOfAtalHakkar"] = {
 }
 
 points["Tirisfal"] = {
+	[61957317] = { 8648, 914, 3 }, -- Elder Darkcore
 	[61865391] = { 8652, 912, 13 }, -- Elder Graveborn
 }
 
@@ -115,6 +116,7 @@ points["Darnassus"] = {
 }
 
 points["Durotar"] = {
+	[46390050] = { 8677, 914, 1 }, -- Elder Darkhorn
 	[53224361] = { 8670, 911, 1 }, -- Elder Runetotem
 }
 
@@ -132,6 +134,7 @@ points["Maraudon"] = {
 }
 
 points["Mulgore"] = {
+	[44942323] = { 8678, 914, 2 }, -- Elder Wheathoof
 	[48505324] = { 8673, 911, 8 }, -- Elder Bloodhoof
 }
 
@@ -154,6 +157,7 @@ points["Tanaris"] = {
 }
 
 points["Teldrassil"] = {
+	[28114367] = { 8718, 915, 1 }, -- Elder Bladeswift
 	[56855311] = { 8715, 911, 6 }, -- Elder Bladeleaf
 }
 
