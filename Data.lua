@@ -274,7 +274,7 @@ points["Uldum"] = {
 }
 
 points["VashjirRuins"] = {
-	[57308620] = { 29738, 6006, 8 }, -- Elder Moonlance
+	[57268615] = { 29738, 6006, 8 }, -- Elder Moonlance
 }
 
 
