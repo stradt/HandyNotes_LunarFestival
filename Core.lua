@@ -9,7 +9,7 @@
 
 -- declaration
 local _, LunarFestival = ...
-local points = LunarFestival.points
+LunarFestival.points = {}
 
 
 -- our db and defaults
@@ -38,6 +38,8 @@ local Cartographer_Waypoints = _G.Cartographer_Waypoints
 local HandyNotes = _G.HandyNotes
 local NotePoint = _G.NotePoint
 local TomTom = _G.TomTom
+
+local points = LunarFestival.points
 
 
 -- plugin handler for HandyNotes

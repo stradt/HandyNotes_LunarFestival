@@ -1,7 +1,5 @@
 
 local _, LunarFestival = ...
-LunarFestival.points = {}
-
 local points = LunarFestival.points
 -- points[<mapfile>] = { [<coordinates>] = { <quest ID>, <achievement ID>, <achievement criteria ID> } }
 
