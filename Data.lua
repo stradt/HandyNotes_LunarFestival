@@ -34,6 +34,11 @@ points["Azeroth"] = {
 	[57175823] = { 29737, 6006, 4 }, -- Elder Firebeard in Twilight Highlands
 	[57305339] = { 29736, 6006, 5 }, -- Elder Darkfeather in Twilight Highlands
 	[35026894] = { 29738, 6006, 8 }, -- Elder Moonlance in Vashj'ir
+
+	[54007958] = { 8713, 910, 2 }, -- Elder Starsong in Sunken Temple
+	[47636888] = { 8644, 910, 4 }, -- Elder Stonefort in Blackrock Spire
+	[46876760] = { 8619, 910, 5 }, -- Elder Morndeep in Blackrock Depths
+	[52902876] = { 8727, 910, 6 }, -- Elder Farwhisper in Stratholme
 }
 
 
@@ -54,6 +59,8 @@ points["BlastedLands"] = {
 points["BurningSteppes"] = {
 	[70114539] = { 8636, 912, 9 }, -- Elder Rumblerock
 	[52382394] = { 8683, 912, 10 }, -- Elder Dawnstrider
+	[24332563] = { 8644, 910, 4 }, -- Elder Stonefort in Blackrock Spire
+	[14610912] = { 8619, 910, 5 }, -- Elder Morndeep in Blackrock Depths
 }
 
 points["DunMorogh"] = {
@@ -63,6 +70,7 @@ points["DunMorogh"] = {
 points["EasternPlaguelands"] = {
 	[35586881] = { 8688, 912, 15 }, -- Elder Windrun
 	[75735456] = { 8650, 912, 16 }, -- Elder Snowcrown
+	[27091252] = { 8727, 910, 6 }, -- Elder Farwhisper in Stratholme
 }
 
 points["Elwynn"] = {
@@ -84,6 +92,8 @@ points["LochModan"] = {
 
 points["SearingGorge"] = {
 	[21307911] = { 8651, 912, 12 }, -- Elder Ironband
+	[40719570] = { 8644, 910, 4 }, -- Elder Stonefort in Blackrock Spire
+	[26997241] = { 8619, 910, 5 }, -- Elder Morndeep in Blackrock Depths
 }
 
 points["Silverpine"] = {
@@ -102,6 +112,10 @@ points["StranglethornVale"] = {
 points["Stratholme"] = {
 	-- dungeonLevel 1
 	[78622215] = { 8727, 910, 6 }, -- Elder Farwhisper
+}
+
+points["SwampOfSorrows"] = {
+	[69665348] = { 8713, 910, 2 }, -- Elder Starsong in Sunken Temple
 }
 
 points["TheCapeOfStranglethorn"] = {
