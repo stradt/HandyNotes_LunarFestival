@@ -166,6 +166,9 @@ points["Kalimdor"] = {
 	[45069550] = { 29741, 6006, 3 }, -- Elder Sekhemi in Uldum
 	[51983408] = { 29739, 6006, 6 }, -- Elder Windsong in Hyjal
 	[56122955] = { 29740, 6006, 7 }, -- Elder Evershade in Hyjal
+
+	[54237986] = { 8676, 910, 1 }, -- Elder Wildmane in Zul'Farrak
+	[38435797] = { 8635, 910, 3 }, -- Elder Splitrock in Maraudon
 }
 
 
@@ -188,6 +191,10 @@ points["Darkshore"] = {
 
 points["Darnassus"] = {
 	[39213185] = { 8718, 915, 1 }, -- Elder Bladeswift
+}
+
+points["Desolace"] = {
+	[29106255] = { 8635, 910, 3 }, -- Elder Splitrock in Maraudon
 }
 
 points["Durotar"] = {
@@ -229,6 +236,7 @@ points["SouthernBarrens"] = {
 points["Tanaris"] = {
 	[37247906] = { 8671, 911, 15 }, -- Elder Ragetotem
 	[51402881] = { 8684, 911, 16 }, -- Elder Dreamseer
+	[39212126] = { 8676, 910, 1 }, -- Elder Wildmane in Zul'Farrak
 }
 
 points["Teldrassil"] = {
