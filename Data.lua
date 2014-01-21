@@ -308,6 +308,14 @@ points["Northrend"] = {
 	[77165679] = { 13030, 1396, 16 }, -- Elder Whurain in Grizzly Hills
 	[42585768] = { 13031, 1396, 17 }, -- Elder Skywarden in Dragonblight
 	[67432391] = { 13032, 1396, 18 }, -- Elder Muraco in The Storm Peaks
+
+	[79558020] = { 13017, 910, 7 }, -- Elder Jarten in Utgarde Keep
+	[12575657] = { 13021, 910, 8 }, -- Elder Igasho in The Nexus
+	[39695849] = { 13022, 910, 9 }, -- Elder Nurgen in Azjol-Nerub
+	[63334917] = { 13023, 910, 10 }, -- Elder Kilias in Drak'Tharon Keep
+	[76733063] = { 13065, 910, 11 }, -- Elder Ohanzee in Gundrak
+	[57411412] = { 13066, 910, 12 }, -- Elder Yurauk in Halls of Stone
+	[79307908] = { 13067, 910, 13 }, -- Elder Chogan'gada in Utgarde Pinnacle
 }
 
 
@@ -316,6 +324,7 @@ points["AzjolNerub"] = {
 }
 
 points["BoreanTundra"] = {
+	[27502598] = { 13021, 910, 8 }, -- Elder Igasho in The Nexus
 	[59096563] = { 13012, 1396, 1 }, -- Elder Sardis
 	[57394373] = { 13033, 1396, 5 }, -- Elder Arp
 	[33803436] = { 13016, 1396, 6 }, -- Elder Northal
@@ -323,6 +332,7 @@ points["BoreanTundra"] = {
 }
 
 points["Dragonblight"] = {
+	[25945089] = { 13022, 910, 9 }, -- Elder Nurgen in Azjol-Nerub
 	[29755590] = { 13014, 1396, 3 }, -- Elder Morthie
 	[48767818] = { 13019, 1396, 12 }, -- Elder Thoim
 	[35104835] = { 13031, 1396, 17 }, -- Elder Skywarden
@@ -333,6 +343,7 @@ points["DrakTharonKeep"] = {
 }
 
 points["GrizzlyHills"] = {
+	[17792703] = { 13023, 910, 10 }, -- Elder Kilias in Drak'Tharon Keep
 	[60572768] = { 13013, 1396, 2 }, -- Elder Beldak
 	[80523712] = { 13025, 1396, 9 }, -- Elder Lunaro
 	[64164700] = { 13030, 1396, 16 }, -- Elder Whurain
@@ -340,6 +351,11 @@ points["GrizzlyHills"] = {
 
 points["Gundrak"] = {
 	[45676153] = { 13065, 910, 11 }, -- Elder Ohanzee
+}
+
+points["HowlingFjord"] = {
+	[57994998] = { 13017, 910, 7 }, -- Elder Jarten in Utgarde Keep
+	[57264668] = { 13067, 910, 13 }, -- Elder Chogan'gada in Utgarde Pinnacle
 }
 
 points["LakeWintergrasp"] = {
@@ -356,6 +372,7 @@ points["TheNexus"] = {
 }
 
 points["TheStormPeaks"] = {
+	[39582691] = { 13066, 910, 12 }, -- Elder Yurauk in Halls of Stone
 	[28897371] = { 13015, 1396, 4 }, -- Elder Fargal
 	[41168473] = { 13028, 1396, 13 }, -- Elder Graymane
 	[31273762] = { 13020, 1396, 14 }, -- Elder Stonebeard
@@ -375,6 +392,8 @@ points["UtgardePinnacle"] = {
 }
 
 points["ZulDrak"] = {
+	[28528694] = { 13023, 910, 10 }, -- Elder Kilias in Drak'Tharon Keep
+	[76162102] = { 13065, 910, 11 }, -- Elder Ohanzee in Gundrak
 	[58915597] = { 13027, 1396, 11 }, -- Elder Tauros
 }
 
