@@ -50,7 +50,9 @@ local function infoFromCoord(mapFile, coord)
 
 	local point = points[mapFile] and points[mapFile][coord]
 
-	if point then
+	if point == "Zidormi" then
+		return point
+	else
 		return GetAchievementCriteriaInfo(point[2], point[3])
 	end
 end
@@ -67,6 +69,11 @@ function LunarFestival:OnEnter(mapFile, coord)
 	local nameOfElder = infoFromCoord(mapFile, coord)
 
 	tooltip:SetText(nameOfElder)
+
+	if nameOfElder == "Zidormi" then
+		tooltip:AddLine("Talk to the Time Keeper to change the zone's phase if you can't find the Elder.", 1, 1, 1)
+	end
+
 	tooltip:Show()
 end
 
@@ -180,7 +187,9 @@ do
 		local state, value = next(t, prestate)
 
 		while state do -- have we reached the end of this zone?
-			if value and (db.completed or not IsQuestFlaggedCompleted(value[1])) then
+			if value == "Zidormi" then
+				return state, mapFile, "interface\\icons\\spell_mage_altertime", db.icon_scale, db.icon_alpha
+			elseif (db.completed or not IsQuestFlaggedCompleted(value[1])) then
 				return state, mapFile, "interface\\icons\\inv_misc_elvencoins", db.icon_scale, db.icon_alpha
 			end
 
@@ -203,7 +212,9 @@ do
 				state, value = next(data, prestate)
 
 				while state do -- have we reached the end of this zone?
-					if value and (db.completed or not IsQuestFlaggedCompleted(value[1])) then
+					if value == "Zidormi" then
+						return state, mapFile, "interface\\icons\\spell_mage_altertime", db.icon_scale, db.icon_alpha
+					elseif (db.completed or not IsQuestFlaggedCompleted(value[1])) then
 						return state, mapFile, "interface\\icons\\inv_misc_elvencoins", db.icon_scale, db.icon_alpha
 					end
 

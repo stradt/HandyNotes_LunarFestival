@@ -18,6 +18,7 @@ points["BlackrockSpire"] = {
 }
 
 points["BlastedLands"] = {
+	[48160728] = "Zidormi",
 	[54284949] = { 8647, 912, 2 }, -- Elder Bellowrage
 }
 
