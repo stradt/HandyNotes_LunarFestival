@@ -182,6 +182,7 @@ do
 
 	-- custom iterator we use to iterate over every node in a given zone
 	local function iter(t, prestate)
+		if not LunarFestival.isEnabled then return nil end
 		if not t then return nil end
 
 		local state, value = next(t, prestate)
@@ -200,6 +201,7 @@ do
 	end
 
 	local function iterCont(t, prestate)
+		if not LunarFestival.isEnabled then return nil end
 		if not t then return nil end
 
 		local zone = t.Z
@@ -290,18 +292,56 @@ local options = {
 }
 
 
+-- check
+local setEnabled = false
+local function CheckEventActive()
+	local _, month, day, year = CalendarGetDate()
+	local curMonth, curYear = CalendarGetMonth()
+	local monthOffset = -12 * (curYear - year) + month - curMonth
+	local numEvents = CalendarGetNumDayEvents(monthOffset, day)
+
+	for i=1, numEvents do
+		local _, eventHour, _, eventType, state, _, texture = CalendarGetDayEvent(monthOffset, day, i)
+
+		if texture == "Calendar_LunarFestival" then
+			if state == "ONGOING" then
+				setEnabled = true
+			else
+				local hour = GetGameTime()
+
+				if state == "END" and hour <= eventHour or state == "START" and hour >= eventHour then
+					setEnabled = true
+				else
+					setEnabled = false
+				end
+			end
+		end
+	end
+
+	if setEnabled and not LunarFestival.isEnabled then
+		LunarFestival.isEnabled = true
+		LunarFestival:Refresh()
+		LunarFestival:RegisterEvent("QUEST_FINISHED", "Refresh")
+
+		HandyNotes:Print("The Lunar Festival has begun!  Locations of Elder NPCs are now marked on your map.")
+	elseif not setEnabled and LunarFestival.isEnabled then
+		LunarFestival.isEnabled = false
+		LunarFestival:Refresh()
+		LunarFestival:UnregisterAllEvents()
+
+		HandyNotes:Print("The Lunar Festival has ended.  See you next year!")
+	end
+end
+
+
 -- initialise
 function LunarFestival:OnEnable()
-	local _, month, day = CalendarGetDate()
+	self.isEnabled = false
 
-	if ( month == 2 and day >= 16 ) or ( month == 3 and day <= 2 ) then
-		HandyNotes:RegisterPluginDB("LunarFestival", self, options)
-		self:RegisterEvent("QUEST_FINISHED", "Refresh")
+	C_Timer.NewTicker(15, CheckEventActive)
+	HandyNotes:RegisterPluginDB("LunarFestival", self, options)
 
-		db = LibStub("AceDB-3.0"):New("HandyNotes_LunarFestivalDB", defaults, "Default").profile
-	else
-		self:Disable()
-	end
+	db = LibStub("AceDB-3.0"):New("HandyNotes_LunarFestivalDB", defaults, "Default").profile
 end
 
 function LunarFestival:Refresh()
