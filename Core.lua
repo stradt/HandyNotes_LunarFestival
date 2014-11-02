@@ -85,7 +85,7 @@ end
 
 local function createWaypoint(_, mapFile, coord)
 	local x, y = HandyNotes:getXY(coord)
-	local m = GetCurrentMapAreaID()
+	local m = HandyNotes:GetMapFiletoMapID(mapFile)
 
 	local nameOfElder = infoFromCoord(mapFile, coord)
 
