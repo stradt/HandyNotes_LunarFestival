@@ -86,15 +86,19 @@ function LunarFestival:OnLeave()
 end
 
 local function createWaypoint(button, mapFile, coord)
-	local c, z = HandyNotes:GetCZ(mapFile)
 	local x, y = HandyNotes:getXY(coord)
-
 	local nameOfElder = infoFromCoord(mapFile, coord)
 
 	if TomTom then
-		TomTom:AddZWaypoint(c, z, x * 100, y * 100, nameOfElder)
+		local m = GetCurrentMapAreaID()
+
+		TomTom:AddMFWaypoint(m, nil, x, y, { title = nameOfElder })
+--		TomTom:AddZWaypoint(c, z, x * 100, y * 100, nameOfElder)
 	elseif Cartographer_Waypoints then
-		Cartographer_Waypoints:AddWaypoint( NotePoint:new(HandyNotes:GetCZToZone(c, z), x, y, nameOfElder) )
+		local c, z = HandyNotes:GetCZ(mapFile)
+		local zone = HandyNotes:GetCZToZone(c, z)
+
+		Cartographer_Waypoints:AddWaypoint( NotePoint:new(zone, x, y, nameOfElder) )
 	end
 end
 
