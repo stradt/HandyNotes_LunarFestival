@@ -36,9 +36,7 @@ local WorldMapButton = _G.WorldMapButton
 local WorldMapTooltip = _G.WorldMapTooltip
 
 local Astrolabe = DongleStub("Astrolabe-1.0")
-local Cartographer_Waypoints = _G.Cartographer_Waypoints
 local HandyNotes = _G.HandyNotes
-local NotePoint = _G.NotePoint
 local TomTom = _G.TomTom
 
 local points = LunarFestival.points
@@ -85,21 +83,13 @@ function LunarFestival:OnLeave()
 	end
 end
 
-local function createWaypoint(button, mapFile, coord)
+local function createWaypoint(_, mapFile, coord)
 	local x, y = HandyNotes:getXY(coord)
+	local m = GetCurrentMapAreaID()
+
 	local nameOfElder = infoFromCoord(mapFile, coord)
 
-	if TomTom then
-		local m = GetCurrentMapAreaID()
-
-		TomTom:AddMFWaypoint(m, nil, x, y, { title = nameOfElder })
---		TomTom:AddZWaypoint(c, z, x * 100, y * 100, nameOfElder)
-	elseif Cartographer_Waypoints then
-		local c, z = HandyNotes:GetCZ(mapFile)
-		local zone = HandyNotes:GetCZToZone(c, z)
-
-		Cartographer_Waypoints:AddWaypoint( NotePoint:new(zone, x, y, nameOfElder) )
-	end
+	TomTom:AddMFWaypoint(m, nil, x, y, { title = nameOfElder })
 end
 
 do
@@ -125,7 +115,7 @@ do
 
 			UIDropDownMenu_AddButton(info, level)
 
-			if TomTom or Cartographer_Waypoints then
+			if TomTom then
 				-- waypoint menu item
 				info.notCheckable = nil
 				info.disabled = nil
