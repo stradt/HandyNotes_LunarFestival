@@ -20,12 +20,17 @@ local defaults = { profile = { completed = false, icon_scale = 1.4, icon_alpha =
 -- upvalues
 local _G = getfenv(0)
 
+local C_Timer_NewTicker = _G.C_Timer.NewTicker
 local CalendarGetDate = _G.CalendarGetDate
+local CalendarGetDayEvent = _G.CalendarGetDayEvent
+local CalendarGetMonth = _G.CalendarGetMonth
+local CalendarGetNumDayEvents = _G.CalendarGetNumDayEvents
 local CloseDropDownMenus = _G.CloseDropDownMenus
 local GameTooltip = _G.GameTooltip
 local GetAchievementCriteriaInfo = _G.GetAchievementCriteriaInfo
+local GetGameTime = _G.GetGameTime
+local GetQuestsCompleted = _G.GetQuestsCompleted
 local gsub = _G.string.gsub
-local IsQuestFlaggedCompleted = _G.IsQuestFlaggedCompleted
 local LibStub = _G.LibStub
 local next = _G.next
 local pairs = _G.pairs
@@ -184,9 +189,9 @@ do
 
 		while state do -- have we reached the end of this zone?
 			if value == "Zidormi" then
-				return state, mapFile, "interface\\icons\\spell_mage_altertime", db.icon_scale, db.icon_alpha
+				return state, nil, "interface\\icons\\spell_mage_altertime", db.icon_scale, db.icon_alpha
 			elseif (db.completed or not completedQuests[value[1]]) then
-				return state, mapFile, "interface\\icons\\inv_misc_elvencoins", db.icon_scale, db.icon_alpha
+				return state, nil, "interface\\icons\\inv_misc_elvencoins", db.icon_scale, db.icon_alpha
 			end
 
 			state, value = next(t, state) -- get next data
@@ -333,7 +338,7 @@ end
 function LunarFestival:OnEnable()
 	self.isEnabled = false
 
-	C_Timer.NewTicker(15, CheckEventActive)
+	C_Timer_NewTicker(15, CheckEventActive)
 	HandyNotes:RegisterPluginDB("LunarFestival", self, options)
 
 	completedQuests = GetQuestsCompleted(completedQuests)
