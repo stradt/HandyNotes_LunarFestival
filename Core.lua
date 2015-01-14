@@ -39,6 +39,7 @@ local Astrolabe = DongleStub("Astrolabe-1.0")
 local HandyNotes = _G.HandyNotes
 local TomTom = _G.TomTom
 
+local completedQuests = {}
 local points = LunarFestival.points
 
 
@@ -184,7 +185,7 @@ do
 		while state do -- have we reached the end of this zone?
 			if value == "Zidormi" then
 				return state, mapFile, "interface\\icons\\spell_mage_altertime", db.icon_scale, db.icon_alpha
-			elseif (db.completed or not IsQuestFlaggedCompleted(value[1])) then
+			elseif (db.completed or not completedQuests[value[1]]) then
 				return state, mapFile, "interface\\icons\\inv_misc_elvencoins", db.icon_scale, db.icon_alpha
 			end
 
@@ -210,7 +211,7 @@ do
 				while state do -- have we reached the end of this zone?
 					if value == "Zidormi" then
 						return state, mapFile, "interface\\icons\\spell_mage_altertime", db.icon_scale, db.icon_alpha
-					elseif (db.completed or not IsQuestFlaggedCompleted(value[1])) then
+					elseif (db.completed or not completedQuests[value[1]]) then
 						return state, mapFile, "interface\\icons\\inv_misc_elvencoins", db.icon_scale, db.icon_alpha
 					end
 
@@ -315,7 +316,7 @@ local function CheckEventActive()
 	if setEnabled and not LunarFestival.isEnabled then
 		LunarFestival.isEnabled = true
 		LunarFestival:Refresh()
-		LunarFestival:RegisterEvent("QUEST_FINISHED", "Refresh")
+		LunarFestival:RegisterEvent("QUEST_FINISHED", "Refresh") -- args: questID, unknown, zero
 
 		HandyNotes:Print("The Lunar Festival has begun!  Locations of Elder NPCs are now marked on your map.")
 	elseif not setEnabled and LunarFestival.isEnabled then
@@ -335,10 +336,12 @@ function LunarFestival:OnEnable()
 	C_Timer.NewTicker(15, CheckEventActive)
 	HandyNotes:RegisterPluginDB("LunarFestival", self, options)
 
+	completedQuests = GetQuestsCompleted(completedQuests)
 	db = LibStub("AceDB-3.0"):New("HandyNotes_LunarFestivalDB", defaults, "Default").profile
 end
 
-function LunarFestival:Refresh()
+function LunarFestival:Refresh(questID) -- args: questID, unknown, zero
+	completedQuests[questID] = true
 	self:SendMessage("HandyNotes_NotifyUpdate", "LunarFestival")
 end
 
