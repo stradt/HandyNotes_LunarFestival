@@ -25,6 +25,7 @@ local CalendarGetDate = _G.CalendarGetDate
 local CalendarGetDayEvent = _G.CalendarGetDayEvent
 local CalendarGetMonth = _G.CalendarGetMonth
 local CalendarGetNumDayEvents = _G.CalendarGetNumDayEvents
+local CalendarSetAbsMonth = _G.CalendarSetAbsMonth
 local CloseDropDownMenus = _G.CloseDropDownMenus
 local GameTooltip = _G.GameTooltip
 local GetAchievementCriteriaInfo = _G.GetAchievementCriteriaInfo
@@ -338,6 +339,9 @@ end
 -- initialise
 function LunarFestival:OnEnable()
 	self.isEnabled = false
+
+	local _, month, _, year = CalendarGetDate()
+	CalendarSetAbsMonth(month, year)
 
 	C_Timer_NewTicker(15, CheckEventActive)
 	HandyNotes:RegisterPluginDB("LunarFestival", self, options)
