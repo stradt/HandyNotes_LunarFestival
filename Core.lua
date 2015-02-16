@@ -347,7 +347,7 @@ function LunarFestival:OnEnable()
 end
 
 function LunarFestival:Refresh(questID) -- args: questID, unknown, zero
-	completedQuests[questID] = true
+	if questID then completedQuests[questID] = true end
 	self:SendMessage("HandyNotes_NotifyUpdate", "LunarFestival")
 end
 
