@@ -169,8 +169,8 @@ end
 do
 	local continentMapFile = {
 		["Kalimdor"]              = {__index = Astrolabe.ContinentList[1]},
-		["Azeroth"]               = {__index = Astrolabe.ContinentList[2]},
-		["Expansion01"]           = {__index = Astrolabe.ContinentList[3]},
+		["Azeroth"]               = {__index = Astrolabe.ContinentList[2]}, -- Eastern Kingdoms
+		["Expansion01"]           = {__index = Astrolabe.ContinentList[3]}, -- Outland
 		["Northrend"]             = {__index = Astrolabe.ContinentList[4]},
 		["TheMaelstromContinent"] = {__index = Astrolabe.ContinentList[5]},
 		["Vashjir"]               = {[0] = 613, 614, 615, 610},
@@ -237,7 +237,7 @@ do
 	end
 
 	function LunarFestival:GetNodes(mapFile)
-		local C = continentMapFile[mapFile] -- Is this a continent?
+		local C = continentMapFile[mapFile] -- is this a continent?
 
 		if C then
 			local tbl = { C = C, Z = 0 }
@@ -350,7 +350,7 @@ function LunarFestival:OnEnable()
 	db = LibStub("AceDB-3.0"):New("HandyNotes_LunarFestivalDB", defaults, "Default").profile
 end
 
-function LunarFestival:Refresh(_, questID) -- args: event, questID, unknown, zero
+function LunarFestival:Refresh(_, questID)
 	if questID then completedQuests[questID] = true end
 	self:SendMessage("HandyNotes_NotifyUpdate", "LunarFestival")
 end
