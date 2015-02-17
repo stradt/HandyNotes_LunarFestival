@@ -208,10 +208,12 @@ do
 
 		local zone = t.Z
 		local mapFile = HandyNotes:GetMapIDtoMapFile(t.C[zone])
-		local data = points[mapFile]
-		local state, value
+		local state, value, data, cleanMapFile
 
 		while mapFile do
+			cleanMapFile = gsub(mapFile, "_terrain%d+$", "")
+			data = points[cleanMapFile]
+
 			if data then -- only if there is data for this zone
 				state, value = next(data, prestate)
 
@@ -230,20 +232,18 @@ do
 			zone = zone + 1
 			t.Z = zone
 			mapFile = HandyNotes:GetMapIDtoMapFile(t.C[zone])
-			data = points[mapFile]
 			prestate = nil
 		end
 	end
 
 	function LunarFestival:GetNodes(mapFile)
-		mapFile = gsub(mapFile, "_terrain%d+$", "")
-
 		local C = continentMapFile[mapFile] -- Is this a continent?
 
 		if C then
 			local tbl = { C = C, Z = 0 }
 			return iterCont, tbl, nil
 		else
+			mapFile = gsub(mapFile, "_terrain%d+$", "")
 			return iter, points[mapFile], nil
 		end
 	end
