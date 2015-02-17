@@ -191,7 +191,7 @@ do
 
 		while state do -- have we reached the end of this zone?
 			if value == "Zidormi" then
-				return state, nil, "interface\\icons\\spell_mage_altertime", db.icon_scale, db.icon_alpha
+				return state, nil, "interface\\icons\\spell_holy_borrowedtime", db.icon_scale, db.icon_alpha
 			elseif (db.completed or not completedQuests[value[1]]) then
 				return state, nil, "interface\\icons\\inv_misc_elvencoins", db.icon_scale, db.icon_alpha
 			end
@@ -219,7 +219,7 @@ do
 
 				while state do -- have we reached the end of this zone?
 					if value == "Zidormi" then
-						return state, mapFile, "interface\\icons\\spell_mage_altertime", db.icon_scale, db.icon_alpha
+						return state, mapFile, "interface\\icons\\spell_holy_borrowedtime", db.icon_scale, db.icon_alpha
 					elseif (db.completed or not completedQuests[value[1]]) then
 						return state, mapFile, "interface\\icons\\inv_misc_elvencoins", db.icon_scale, db.icon_alpha
 					end
