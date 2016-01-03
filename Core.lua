@@ -305,6 +305,8 @@ local function CheckEventActive()
 	end
 
 	if setEnabled and not LunarFestival.isEnabled then
+		completedQuests = GetQuestsCompleted(completedQuests)
+
 		LunarFestival.isEnabled = true
 		LunarFestival:Refresh()
 		LunarFestival:RegisterEvent("QUEST_TURNED_IN", "Refresh")
@@ -336,7 +338,6 @@ function LunarFestival:OnEnable()
 	C_Timer_NewTicker(15, CheckEventActive)
 	HandyNotes:RegisterPluginDB("LunarFestival", self, options)
 
-	completedQuests = GetQuestsCompleted(completedQuests)
 	db = LibStub("AceDB-3.0"):New("HandyNotes_LunarFestivalDB", defaults, "Default").profile
 end
 
