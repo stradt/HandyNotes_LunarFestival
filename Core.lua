@@ -324,6 +324,12 @@ end
 function LunarFestival:OnEnable()
 	self.isEnabled = false
 
+	local HereBeDragons = LibStub("HereBeDragons-1.0", true)
+	if not HereBeDragons then
+		HandyNotes:Print("Your installed copy of HandyNotes is out of date and the Hallow's End plug-in will not work correctly.  Please update HandyNotes to version 1.4.0 or newer.")
+		return
+	end
+
 	local _, month, _, year = CalendarGetDate()
 	CalendarSetAbsMonth(month, year)
 
