@@ -286,7 +286,7 @@ function LunarFestival:OnEnable()
 
 	local HereBeDragons = LibStub("HereBeDragons-1.0", true)
 	if not HereBeDragons then
-		HandyNotes:Print("Your installed copy of HandyNotes is out of date and the Hallow's End plug-in will not work correctly.  Please update HandyNotes to version 1.4.0 or newer.")
+		HandyNotes:Print("Your installed copy of HandyNotes is out of date and the Lunar Festival plug-in will not work correctly.  Please update HandyNotes to version 1.4.0 or newer.")
 		return
 	end
 
