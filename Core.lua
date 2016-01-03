@@ -77,7 +77,7 @@ function LunarFestival:OnEnter(mapFile, coord)
 
 	if TomTom then
 		tooltip:AddLine("Right-click to set a waypoint.", 1, 1, 1)
-		tooltip:AddLine("Control-Right-click to set waypoints to every bucket.", 1, 1, 1)
+		tooltip:AddLine("Control-Right-click to set waypoints to every Elder.", 1, 1, 1)
 	end
 
 	tooltip:Show()
