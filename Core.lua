@@ -31,6 +31,7 @@ local GetAchievementCriteriaInfo = _G.GetAchievementCriteriaInfo
 local GetGameTime = _G.GetGameTime
 local GetQuestsCompleted = _G.GetQuestsCompleted
 local gsub = _G.string.gsub
+local IsControlKeyDown = _G.IsControlKeyDown
 local LibStub = _G.LibStub
 local next = _G.next
 local UIParent = _G.UIParent
@@ -76,6 +77,7 @@ function LunarFestival:OnEnter(mapFile, coord)
 
 	if TomTom then
 		tooltip:AddLine("Right-click to set a waypoint.", 1, 1, 1)
+		tooltip:AddLine("Control-Right-click to set waypoints to every bucket.", 1, 1, 1)
 	end
 
 	tooltip:Show()
@@ -97,11 +99,26 @@ local function createWaypoint(mapFile, coord)
 	local nameOfElder = infoFromCoord(mapFile, coord)
 
 	TomTom:AddMFWaypoint(m, nil, x, y, { title = nameOfElder })
+	TomTom:SetClosestWaypoint()
+end
+
+local function createAllWaypoints()
+	for mapFile, coords in next, points do
+		for coord, questID in next, coords do
+			if coord and (db.completed or not completedQuests[questID]) then
+				createWaypoint(mapFile, coord)
+			end
+		end
+	end
 end
 
 function LunarFestival:OnClick(button, down, mapFile, coord)
 	if TomTom and button == "RightButton" and not down then
-		createWaypoint(mapFile, coord)
+		if IsControlKeyDown() then
+			createAllWaypoints()
+		else
+			createWaypoint(mapFile, coord)
+		end
 	end
 end
 
