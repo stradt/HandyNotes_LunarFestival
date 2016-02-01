@@ -10,12 +10,12 @@ local points = LunarFestival.points
 
 points["BlackrockDepths"] = {
 	-- dungeonLevel 1
-	[50536287] = { 8619, 910, 5 }, -- Elder Morndeep
+	[50536287] = { 8619, 910, 1 }, -- Elder Morndeep
 }
 
 points["BlackrockSpire"] = {
 	-- dungeonLevel 3
-	[61814000] = { 8644, 910, 4 }, -- Elder Stonefort
+	[61814000] = { 8644, 910, 7 }, -- Elder Stonefort
 }
 
 points["BlastedLands"] = {
@@ -26,7 +26,7 @@ points["BlastedLands"] = {
 points["BurningSteppes"] = {
 	[70114539] = { 8636, 912, 12 }, -- Elder Rumblerock
 	[52382394] = { 8683, 912, 2 }, -- Elder Dawnstrider
-	[27592544] = { 8644, 910, 4 }, -- Elder Stonefort in Lower Blackrock Spire
+	[27592544] = { 8644, 910, 7 }, -- Elder Stonefort in Lower Blackrock Spire
 }
 
 points["DunMorogh"] = {
@@ -36,7 +36,7 @@ points["DunMorogh"] = {
 points["EasternPlaguelands"] = {
 	[35586881] = { 8688, 912, 3 }, -- Elder Windrun
 	[75735456] = { 8650, 912, 13 }, -- Elder Snowcrown
-	[27091252] = { 8727, 910, 6 }, -- Elder Farwhisper in Stratholme
+	[27091252] = { 8727, 910, 4 }, -- Elder Farwhisper in Stratholme
 }
 
 points["Elwynn"] = {
@@ -58,7 +58,7 @@ points["LochModan"] = {
 
 points["SearingGorge"] = {
 	[21307911] = { 8651, 912, 10 }, -- Elder Ironband
-	[26937262] = { 8619, 910, 5 }, -- Elder Morndeep in Blackrock Depths
+	[26937262] = { 8619, 910, 1 }, -- Elder Morndeep in Blackrock Depths
 }
 
 points["Silverpine"] = {
@@ -76,11 +76,11 @@ points["StranglethornVale"] = {
 
 points["Stratholme"] = {
 	-- dungeonLevel 1
-	[78622215] = { 8727, 910, 6 }, -- Elder Farwhisper
+	[78622215] = { 8727, 910, 4 }, -- Elder Farwhisper
 }
 
 points["SwampOfSorrows"] = {
-	[69665348] = { 8713, 910, 2 }, -- Elder Starsong in Sunken Temple
+	[69665348] = { 8713, 910, 3 }, -- Elder Starsong in Sunken Temple
 }
 
 points["TheCapeOfStranglethorn"] = {
@@ -88,7 +88,7 @@ points["TheCapeOfStranglethorn"] = {
 }
 
 points["TheTempleOfAtalHakkar"] = {
-	[62913448] = { 8713, 910, 2 }, -- Elder Starsong
+	[62913448] = { 8713, 910, 3 }, -- Elder Starsong
 }
 
 points["Tirisfal"] = {
@@ -136,7 +136,7 @@ points["Darnassus"] = {
 }
 
 points["Desolace"] = {
-	[29106255] = { 8635, 910, 3 }, -- Elder Splitrock in Maraudon
+	[29106255] = { 8635, 910, 2 }, -- Elder Splitrock in Maraudon
 }
 
 points["Durotar"] = {
@@ -154,7 +154,7 @@ points["Felwood"] = {
 }
 
 points["Maraudon"] = {
-	[51479373] = { 8635, 910, 3 }, -- Elder Splitrock
+	[51479373] = { 8635, 910, 2 }, -- Elder Splitrock
 }
 
 points["Mulgore"] = {
@@ -178,7 +178,7 @@ points["SouthernBarrens"] = {
 points["Tanaris"] = {
 	[37247906] = { 8671, 911, 18 }, -- Elder Ragetotem
 	[51402881] = { 8684, 911, 13 }, -- Elder Dreamseer
-	[39212126] = { 8676, 910, 1 }, -- Elder Wildmane in Zul'Farrak
+	[39212126] = { 8676, 910, 6 }, -- Elder Wildmane in Zul'Farrak
 }
 
 points["Teldrassil"] = {
@@ -205,7 +205,7 @@ points["Winterspring"] = {
 }
 
 points["ZulFarrak"] = {
-	[34503934] = { 8676, 910, 1 }, -- Elder Wildmane
+	[34503934] = { 8676, 910, 6 }, -- Elder Wildmane
 }
 
 
@@ -219,11 +219,11 @@ points["ZulFarrak"] = {
 ---------------
 
 points["AzjolNerub"] = {
-	[21774356] = { 13022, 910, 9 }, -- Elder Nurgen
+	[21774356] = { 13022, 910, 12 }, -- Elder Nurgen
 }
 
 points["BoreanTundra"] = {
-	[27502598] = { 13021, 910, 8 }, -- Elder Igasho in The Nexus
+	[27502598] = { 13021, 910, 13 }, -- Elder Igasho in The Nexus
 	[59096563] = { 13012, 1396, 1 }, -- Elder Sardis
 	[57394373] = { 13033, 1396, 5 }, -- Elder Arp
 	[33803436] = { 13016, 1396, 6 }, -- Elder Northal
@@ -231,30 +231,30 @@ points["BoreanTundra"] = {
 }
 
 points["Dragonblight"] = {
-	[25945089] = { 13022, 910, 9 }, -- Elder Nurgen in Azjol-Nerub
+	[25945089] = { 13022, 910, 12 }, -- Elder Nurgen in Azjol-Nerub
 	[29755590] = { 13014, 1396, 3 }, -- Elder Morthie
 	[48767818] = { 13019, 1396, 12 }, -- Elder Thoim
 	[35104835] = { 13031, 1396, 17 }, -- Elder Skywarden
 }
 
 points["DrakTharonKeep"] = {
-	[68887912] = { 13023, 910, 10 }, -- Elder Kilias
+	[68887912] = { 13023, 910, 8 }, -- Elder Kilias
 }
 
 points["GrizzlyHills"] = {
-	[17792703] = { 13023, 910, 10 }, -- Elder Kilias in Drak'Tharon Keep
+	[17792703] = { 13023, 910, 8 }, -- Elder Kilias in Drak'Tharon Keep
 	[60572768] = { 13013, 1396, 2 }, -- Elder Beldak
 	[80523712] = { 13025, 1396, 9 }, -- Elder Lunaro
 	[64164700] = { 13030, 1396, 16 }, -- Elder Whurain
 }
 
 points["Gundrak"] = {
-	[45676153] = { 13065, 910, 11 }, -- Elder Ohanzee
+	[45676153] = { 13065, 910, 9 }, -- Elder Ohanzee
 }
 
 points["HowlingFjord"] = {
-	[57994998] = { 13017, 910, 7 }, -- Elder Jarten in Utgarde Keep
-	[57264668] = { 13067, 910, 13 }, -- Elder Chogan'gada in Utgarde Pinnacle
+	[57994998] = { 13017, 910, 10 }, -- Elder Jarten in Utgarde Keep
+	[57264668] = { 13067, 910, 11 }, -- Elder Chogan'gada in Utgarde Pinnacle
 }
 
 points["LakeWintergrasp"] = {
@@ -267,11 +267,11 @@ points["SholazarBasin"] = {
 }
 
 points["TheNexus"] = {
-	[55206471] = { 13021, 910, 8 }, -- Elder Igasho
+	[55206471] = { 13021, 910, 13 }, -- Elder Igasho
 }
 
 points["TheStormPeaks"] = {
-	[39582691] = { 13066, 910, 12 }, -- Elder Yurauk in Halls of Stone
+	[39582691] = { 13066, 910, 5 }, -- Elder Yurauk in Halls of Stone
 	[28897371] = { 13015, 1396, 4 }, -- Elder Fargal
 	[41168473] = { 13028, 1396, 13 }, -- Elder Graymane
 	[31273762] = { 13020, 1396, 14 }, -- Elder Stonebeard
@@ -279,20 +279,20 @@ points["TheStormPeaks"] = {
 }
 
 points["Ulduar77"] = { -- Halls of Stone
-	[29376205] = { 13066, 910, 12 }, -- Elder Yurauk
+	[29376205] = { 13066, 910, 5 }, -- Elder Yurauk
 }
 
 points["UtgardeKeep"] = {
-	[47426963] = { 13017, 910, 7 }, -- Elder Jarten
+	[47426963] = { 13017, 910, 10 }, -- Elder Jarten
 }
 
 points["UtgardePinnacle"] = {
-	[48772298] = { 13067, 910, 13 }, -- Elder Chogan'gada
+	[48772298] = { 13067, 910, 11 }, -- Elder Chogan'gada
 }
 
 points["ZulDrak"] = {
 	[28528694] = { 13023, 910, 10 }, -- Elder Kilias in Drak'Tharon Keep
-	[76162102] = { 13065, 910, 11 }, -- Elder Ohanzee in Gundrak
+	[76162102] = { 13065, 910, 9 }, -- Elder Ohanzee in Gundrak
 	[58915597] = { 13027, 1396, 11 }, -- Elder Tauros
 }
 
