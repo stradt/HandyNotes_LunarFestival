@@ -40,7 +40,7 @@ points["EasternPlaguelands"] = {
 }
 
 points["Elwynn"] = {
-	[34565026] = { 8646, 915, 3 }, -- Elder Hammershout
+	[34565026] = { 8646, 915, 1 }, -- Elder Hammershout
 	[39796367] = { 8649, 912, 14 }, -- Elder Stormbrow
 }
 
@@ -92,12 +92,12 @@ points["TheTempleOfAtalHakkar"] = {
 }
 
 points["Tirisfal"] = {
-	[61957317] = { 8648, 914, 3 }, -- Elder Darkcore
+	[61957317] = { 8648, 914, 1 }, -- Elder Darkcore
 	[61865391] = { 8652, 912, 9 }, -- Elder Graveborn
 }
 
 points["Undercity"] = {
-	[66633821] = { 8648, 914, 3 }, -- Elder Darkcore
+	[66633821] = { 8648, 914, 1 }, -- Elder Darkcore
 }
 
 points["WesternPlaguelands"] = {
@@ -132,7 +132,7 @@ points["Darkshore"] = {
 }
 
 points["Darnassus"] = {
-	[39213185] = { 8718, 915, 1 }, -- Elder Bladeswift
+	[39213185] = { 8718, 915, 3 }, -- Elder Bladeswift
 }
 
 points["Desolace"] = {
@@ -140,7 +140,7 @@ points["Desolace"] = {
 }
 
 points["Durotar"] = {
-	[46390050] = { 8677, 914, 1 }, -- Elder Darkhorn
+	[46390050] = { 8677, 914, 3 }, -- Elder Darkhorn
 	[53224361] = { 8670, 911, 6 }, -- Elder Runetotem
 }
 
@@ -163,7 +163,7 @@ points["Mulgore"] = {
 }
 
 points["Orgrimmar"] = {
-	[52256001] = { 8677, 914, 1 }, -- Elder Darkhorn
+	[52256001] = { 8677, 914, 3 }, -- Elder Darkhorn
 }
 
 points["Silithus"] = {
