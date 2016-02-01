@@ -20,32 +20,32 @@ points["BlackrockSpire"] = {
 
 points["BlastedLands"] = {
 	[48160728] = "Zidormi",
-	[54284949] = { 8647, 912, 2 }, -- Elder Bellowrage
+	[54284949] = { 8647, 912, 16 }, -- Elder Bellowrage
 }
 
 points["BurningSteppes"] = {
-	[70114539] = { 8636, 912, 9 }, -- Elder Rumblerock
-	[52382394] = { 8683, 912, 10 }, -- Elder Dawnstrider
+	[70114539] = { 8636, 912, 12 }, -- Elder Rumblerock
+	[52382394] = { 8683, 912, 2 }, -- Elder Dawnstrider
 	[27592544] = { 8644, 910, 4 }, -- Elder Stonefort in Lower Blackrock Spire
 }
 
 points["DunMorogh"] = {
-	[53914991] = { 8653, 912, 1 }, -- Elder Goldwell
+	[53914991] = { 8653, 912, 15 }, -- Elder Goldwell
 }
 
 points["EasternPlaguelands"] = {
-	[35586881] = { 8688, 912, 15 }, -- Elder Windrun
-	[75735456] = { 8650, 912, 16 }, -- Elder Snowcrown
+	[35586881] = { 8688, 912, 3 }, -- Elder Windrun
+	[75735456] = { 8650, 912, 13 }, -- Elder Snowcrown
 	[27091252] = { 8727, 910, 6 }, -- Elder Farwhisper in Stratholme
 }
 
 points["Elwynn"] = {
 	[34565026] = { 8646, 915, 3 }, -- Elder Hammershout
-	[39796367] = { 8649, 912, 3 }, -- Elder Stormbrow
+	[39796367] = { 8649, 912, 14 }, -- Elder Stormbrow
 }
 
 points["Hinterlands"] = {
-	[50004804] = { 8643, 912, 11 }, -- Elder Highpeak
+	[50004804] = { 8643, 912, 8 }, -- Elder Highpeak
 }
 
 points["Ironforge"] = {
@@ -53,16 +53,16 @@ points["Ironforge"] = {
 }
 
 points["LochModan"] = {
-	[33324654] = { 8642, 912, 7 }, -- Elder Silvervein
+	[33324654] = { 8642, 912, 1 }, -- Elder Silvervein
 }
 
 points["SearingGorge"] = {
-	[21307911] = { 8651, 912, 12 }, -- Elder Ironband
+	[21307911] = { 8651, 912, 10 }, -- Elder Ironband
 	[26937262] = { 8619, 910, 5 }, -- Elder Morndeep in Blackrock Depths
 }
 
 points["Silverpine"] = {
-	[44984114] = { 8645, 912, 14 }, -- Elder Obsidian
+	[44984114] = { 8645, 912, 11 }, -- Elder Obsidian
 }
 
 points["StranglethornJungle"] = {
@@ -93,7 +93,7 @@ points["TheTempleOfAtalHakkar"] = {
 
 points["Tirisfal"] = {
 	[61957317] = { 8648, 914, 3 }, -- Elder Darkcore
-	[61865391] = { 8652, 912, 13 }, -- Elder Graveborn
+	[61865391] = { 8652, 912, 9 }, -- Elder Graveborn
 }
 
 points["Undercity"] = {
@@ -101,12 +101,12 @@ points["Undercity"] = {
 }
 
 points["WesternPlaguelands"] = {
-	[63513612] = { 8722, 912, 4 }, -- Elder Meadowrun
-	[69187345] = { 8714, 912, 17 }, -- Elder Moonstrike
+	[63513612] = { 8722, 912, 17 }, -- Elder Meadowrun
+	[69187345] = { 8714, 912, 4 }, -- Elder Moonstrike
 }
 
 points["Westfall"] = {
-	[56654709] = { 8675, 912, 8 }, -- Elder Skychaser
+	[56654709] = { 8675, 912, 7 }, -- Elder Skychaser
 }
 
 
