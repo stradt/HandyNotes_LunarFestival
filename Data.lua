@@ -302,23 +302,23 @@ points["ZulDrak"] = {
 ---------------
 
 points["Deepholm"] = {
-	[49705488] = { 29735, 6006, 1 }, -- Elder Stonebrand
-	[27706918] = { 29734, 6006, 9 }, -- Elder Deepforge
+	[49705488] = { 29735, 6006, 5 }, -- Elder Stonebrand
+	[27706918] = { 29734, 6006, 1 }, -- Elder Deepforge
 }
 
 points["Hyjal"] = {
-	[26696205] = { 29739, 6006, 6 }, -- Elder Windsong
-	[62542282] = { 29740, 6006, 7 }, -- Elder Evershade
+	[26696205] = { 29739, 6006, 4 }, -- Elder Windsong
+	[62542282] = { 29740, 6006, 3 }, -- Elder Evershade
 }
 
 points["TwilightHighlands"] = {
-	[50917045] = { 29737, 6006, 4 }, -- Elder Firebeard
-	[51883306] = { 29736, 6006, 5 }, -- Elder Darkfeather
+	[50917045] = { 29737, 6006, 2 }, -- Elder Firebeard
+	[51883306] = { 29736, 6006, 7 }, -- Elder Darkfeather
 }
 
 points["Uldum"] = {
-	[65521867] = { 29742, 6006, 2 }, -- Elder Menkhaf
-	[31596298] = { 29741, 6006, 3 }, -- Elder Sekhemi
+	[65521867] = { 29742, 6006, 6 }, -- Elder Menkhaf
+	[31596298] = { 29741, 6006, 9 }, -- Elder Sekhemi
 }
 
 points["Vashjir"] = {
