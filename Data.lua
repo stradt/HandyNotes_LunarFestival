@@ -115,20 +115,20 @@ points["Westfall"] = {
 --------------
 
 points["Ashenvale"] = {
-	[35544891] = { 8725, 911, 9 }, -- Elder Riversong
+	[35544891] = { 8725, 911, 11 }, -- Elder Riversong
 }
 
 points["Aszhara"] = {
-	[64737934] = { 8720, 911, 2 }, -- Elder Skygleam
+	[64737934] = { 8720, 911, 5 }, -- Elder Skygleam
 }
 
 points["Barrens"] = {
-	[48525927] = { 8717, 911, 3 }, -- Elder Moonwarden
-	[68366996] = { 8680, 911, 5 }, -- Elder Windtotem
+	[48525927] = { 8717, 911, 1 }, -- Elder Moonwarden
+	[68366996] = { 8680, 911, 21 }, -- Elder Windtotem
 }
 
 points["Darkshore"] = {
-	[49541894] = { 8721, 911, 7 }, -- Elder Starweave
+	[49541894] = { 8721, 911, 15 }, -- Elder Starweave
 }
 
 points["Darnassus"] = {
@@ -141,16 +141,16 @@ points["Desolace"] = {
 
 points["Durotar"] = {
 	[46390050] = { 8677, 914, 1 }, -- Elder Darkhorn
-	[53224361] = { 8670, 911, 1 }, -- Elder Runetotem
+	[53224361] = { 8670, 911, 6 }, -- Elder Runetotem
 }
 
 points["Feralas"] = {
-	[76713789] = { 8679, 911, 10 }, -- Elder Grimtotem
-	[62563107] = { 8685, 911, 11 }, -- Elder Mistwalker
+	[76713789] = { 8679, 911, 7 }, -- Elder Grimtotem
+	[62563107] = { 8685, 911, 16 }, -- Elder Mistwalker
 }
 
 points["Felwood"] = {
-	[38355285] = { 8723, 911, 12 }, -- Elder Nightwind
+	[38355285] = { 8723, 911, 14 }, -- Elder Nightwind
 }
 
 points["Maraudon"] = {
@@ -159,7 +159,7 @@ points["Maraudon"] = {
 
 points["Mulgore"] = {
 	[44942323] = { 8678, 914, 2 }, -- Elder Wheathoof
-	[48505324] = { 8673, 911, 8 }, -- Elder Bloodhoof
+	[48505324] = { 8673, 911, 2 }, -- Elder Bloodhoof
 }
 
 points["Orgrimmar"] = {
@@ -167,8 +167,8 @@ points["Orgrimmar"] = {
 }
 
 points["Silithus"] = {
-	[30811332] = { 8654, 911, 20 }, -- Elder Primestone
-	[53023548] = { 8719, 911, 21 }, -- Elder Bladesing
+	[30811332] = { 8654, 911, 19 }, -- Elder Primestone
+	[53023548] = { 8719, 911, 9 }, -- Elder Bladesing
 }
 
 points["SouthernBarrens"] = {
@@ -176,19 +176,19 @@ points["SouthernBarrens"] = {
 }
 
 points["Tanaris"] = {
-	[37247906] = { 8671, 911, 15 }, -- Elder Ragetotem
-	[51402881] = { 8684, 911, 16 }, -- Elder Dreamseer
+	[37247906] = { 8671, 911, 18 }, -- Elder Ragetotem
+	[51402881] = { 8684, 911, 13 }, -- Elder Dreamseer
 	[39212126] = { 8676, 910, 1 }, -- Elder Wildmane in Zul'Farrak
 }
 
 points["Teldrassil"] = {
 	[28114367] = { 8718, 915, 1 }, -- Elder Bladeswift
-	[56855311] = { 8715, 911, 6 }, -- Elder Bladeleaf
+	[56855311] = { 8715, 911, 10 }, -- Elder Bladeleaf
 }
 
 points["ThousandNeedles"] = {
-	[46345101] = { 8682, 911, 13 }, -- Elder Skyseer
-	[77097561] = { 8724, 911, 14 }, -- Elder Morningdew
+	[46345101] = { 8682, 911, 8 }, -- Elder Skyseer
+	[77097561] = { 8724, 911, 17 }, -- Elder Morningdew
 }
 
 points["ThunderBluff"] = {
@@ -196,12 +196,12 @@ points["ThunderBluff"] = {
 }
 
 points["UngoroCrater"] = {
-	[50377616] = { 8681, 911, 17 }, -- Elder Thunderhorn
+	[50377616] = { 8681, 911, 20 }, -- Elder Thunderhorn
 }
 
 points["Winterspring"] = {
-	[53235675] = { 8726, 911, 18 }, -- Elder Brightspear
-	[59964994] = { 8672, 911, 19 }, -- Elder Stonespire
+	[53235675] = { 8726, 911, 12 }, -- Elder Brightspear
+	[59964994] = { 8672, 911, 3 }, -- Elder Stonespire
 }
 
 points["ZulFarrak"] = {
