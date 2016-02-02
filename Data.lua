@@ -291,7 +291,7 @@ points["UtgardePinnacle"] = {
 }
 
 points["ZulDrak"] = {
-	[28528694] = { 13023, 910, 10 }, -- Elder Kilias in Drak'Tharon Keep
+	[28528694] = { 13023, 910, 8 }, -- Elder Kilias in Drak'Tharon Keep
 	[76162102] = { 13065, 910, 9 }, -- Elder Ohanzee in Gundrak
 	[58915597] = { 13027, 1396, 8 }, -- Elder Tauros
 }
