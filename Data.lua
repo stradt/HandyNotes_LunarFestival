@@ -182,7 +182,7 @@ points["Tanaris"] = {
 }
 
 points["Teldrassil"] = {
-	[28114367] = { 8718, 915, 1 }, -- Elder Bladeswift
+	[28114367] = { 8718, 915, 3 }, -- Elder Bladeswift
 	[56855311] = { 8715, 911, 10 }, -- Elder Bladeleaf
 }
 
