@@ -242,7 +242,6 @@ points["DrakTharonKeep"] = {
 }
 
 points["GrizzlyHills"] = {
-	[17792703] = { 13023, 910, 10 }, -- Elder Kilias in Drak'Tharon Keep
 	[60572768] = { 13013, 1396, 2 }, -- Elder Beldak
 	[80523712] = { 13025, 1396, 9 }, -- Elder Lunaro
 	[64164700] = { 13030, 1396, 16 }, -- Elder Whurain
