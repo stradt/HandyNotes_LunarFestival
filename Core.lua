@@ -258,7 +258,7 @@ local function CheckEventActive()
 	for i=1, numEvents do
 		local _, eventHour, _, eventType, state, _, texture = CalendarGetDayEvent(monthOffset, day, i)
 
-		if texture == "Calendar_LunarFestival" then
+		if texture == 235469 or texture == 235470 or texture == 235471 then
 			if state == "ONGOING" then
 				setEnabled = true
 			else
