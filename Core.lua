@@ -75,7 +75,7 @@ function LunarFestival:OnEnter(mapFile, coord)
 	tooltip:SetText(nameOfElder)
 
 	if nameOfElder == "Zidormi" then
-		tooltip:AddLine("Talk to the Time Keeper to change the zone's phase if you can't find the Elder.", 1, 1, 1)
+		tooltip:AddLine("Talk to the Time Keeper to travel back in time if you can't find the Elder.", 1, 1, 1)
 		tooltip:AddLine(" ")
 	end
 
