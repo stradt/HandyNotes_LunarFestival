@@ -36,6 +36,7 @@ points[36] = { -- "BurningSteppes"
 }
 
 points[27] = { -- "DunMorogh"
+	[62962194] = { 8866, 915, 2 }, -- Elder Bronzebeard
 	[53914991] = { 8653, 912, 1 }, -- Elder Goldwell
 }
 
@@ -55,7 +56,7 @@ points[26] = { -- "Hinterlands"
 }
 
 points[87] = { -- "Ironforge"
-	[29211706] = { 8866, 915, 2 }, -- Elder Bronzebeard
+	[29331715] = { 8866, 915, 2 }, -- Elder Bronzebeard
 }
 
 points[48] = { -- "LochModan"
