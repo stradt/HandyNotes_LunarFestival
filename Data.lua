@@ -17,7 +17,7 @@ points[33] = { -- "BlackrockMountain"
 }
 
 points[35] = { -- "BlackrockMountain"
-	[55458399] = { 8619, 910, 5 }, -- Elder Morndeep
+	[38841820] = { 8619, 910, 5 }, -- Elder Morndeep
 }
 
 points[252] = { -- "BlackrockSpire"
