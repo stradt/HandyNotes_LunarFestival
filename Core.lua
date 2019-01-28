@@ -120,10 +120,12 @@ end
 
 local function createAllWaypoints()
 	for mapFile, coords in next, points do
+		if not continents[mapFile] then
 		for coord, questID in next, coords do
 			if coord and (db.completed or not completedQuests[questID[1]]) then
 				createWaypoint(mapFile, coord)
 			end
+		end
 		end
 	end
 	TomTom:SetClosestWaypoint()
