@@ -32,6 +32,7 @@ local notes = {
 	[8619]  = "Inside the dungeon.", -- Elder Morndeep, Blackrock Depths
 	[8635]  = "Inside the dungeon.", -- Elder Splitrock, Maraudon
 	[8644]  = "Inside Lower Blackrock Spire.", -- Elder Stonefort, Lower Blackrock Spire
+	[8647]  = "Speak to Zidormi at the north of the zone to gain access to this Elder.",
 	[8648]  = "Speak to Zidormi in Tirisfal to gain access to The Undercity.",
 	[8652]  = "Speak to Zidormi in Tirisfal to gain access to Brill.",
 	[8676]  = "Inside the dungeon.", -- Elder Wildmane, Zul'Farrak
