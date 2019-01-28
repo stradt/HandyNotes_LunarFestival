@@ -152,7 +152,7 @@ do
 				return coord, nil, icon, db.icon_scale, db.icon_alpha
 			end
 
-			coord, v = next(t, coord)
+			coord, value = next(t, coord)
 		end
 	end
 
