@@ -225,16 +225,12 @@ local function CheckEventActive()
 		local event = C_Calendar.GetDayEvent(monthOffset, day, i)
 
 		if event.iconTexture == 235469 or event.iconTexture == 235470 or event.iconTexture == 235471 then
-			if event.sequenceType == "ONGOING" then
+			local hour = tonumber(date("%H"))
+
+			if event.sequenceType == "ONGOING" or (event.sequenceType == "END" and hour <= event.endTime.hour) or (event.sequenceType == "START" and hour >= event.startTime.hour) then
 				setEnabled = true
 			else
-				local hour = tonumber(date("%H"))
-
-				if (event.sequenceType == "END" and hour <= event.endTime.hour) or (event.sequenceType == "START" and hour >= event.startTime.hour) then
-					setEnabled = true
-				else
-					setEnabled = false
-				end
+				setEnabled = false
 			end
 		end
 	end
