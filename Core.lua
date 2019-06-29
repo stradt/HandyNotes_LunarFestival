@@ -51,7 +51,7 @@ local notes = {
 }
 
 -- upvalues
-local C_Timer_NewTicker = C_Timer.NewTicker
+local C_Timer_After = C_Timer.After
 local C_Calendar = C_Calendar
 local GameTooltip = GameTooltip
 local GetAchievementCriteriaInfo = GetAchievementCriteriaInfo
@@ -244,6 +244,10 @@ local function CheckEventActive()
 	end
 end
 
+local function RepeatingCheck()
+	CheckEventActive()
+	C_Timer_After(60, RepeatingCheck)
+end
 
 -- initialise
 function LunarFestival:OnEnable()
@@ -274,11 +278,16 @@ function LunarFestival:OnEnable()
 
 	local calendar = C_DateAndTime.GetCurrentCalendarTime()
 	C_Calendar.SetAbsMonth(calendar.month, calendar.year)
+	CheckEventActive()
 
-	C_Timer_NewTicker(15, CheckEventActive)
 	HandyNotes:RegisterPluginDB("LunarFestival", self, options)
-
 	db = LibStub("AceDB-3.0"):New("HandyNotes_LunarFestivalDB", defaults, "Default").profile
+
+	self:RegisterEvent("CALENDAR_UPDATE_EVENT", CheckEventActive)
+	self:RegisterEvent("CALENDAR_UPDATE_EVENT_LIST", CheckEventActive)
+	self:RegisterEvent("ZONE_CHANGED", CheckEventActive)
+
+	C_Timer_After(60, RepeatingCheck)
 end
 
 function LunarFestival:Refresh(_, questID)
