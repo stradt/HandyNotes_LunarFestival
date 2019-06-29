@@ -51,24 +51,19 @@ local notes = {
 }
 
 -- upvalues
-local _G = getfenv(0)
+local C_Timer_NewTicker = C_Timer.NewTicker
+local C_Calendar = C_Calendar
+local GameTooltip = GameTooltip
+local GetAchievementCriteriaInfo = GetAchievementCriteriaInfo
+local GetGameTime = GetGameTime
+local GetQuestsCompleted = GetQuestsCompleted
+local IsControlKeyDown = IsControlKeyDown
+local LibStub = LibStub
+local next = next
+local UIParent = UIParent
 
-local C_Timer_NewTicker = _G.C_Timer.NewTicker
-local C_Calendar = _G.C_Calendar
-local GameTooltip = _G.GameTooltip
-local GetAchievementCriteriaInfo = _G.GetAchievementCriteriaInfo
-local GetGameTime = _G.GetGameTime
-local GetQuestsCompleted = _G.GetQuestsCompleted
-local gsub = _G.string.gsub
-local IsControlKeyDown = _G.IsControlKeyDown
-local LibStub = _G.LibStub
-local next = _G.next
-local UIParent = _G.UIParent
-local WorldMapButton = _G.WorldMapButton
-local WorldMapTooltip = _G.WorldMapTooltip
-
-local HandyNotes = _G.HandyNotes
-local TomTom = _G.TomTom
+local HandyNotes = HandyNotes
+local TomTom = TomTom
 
 local completedQuests = {}
 local points = LunarFestival.points
@@ -76,38 +71,32 @@ local points = LunarFestival.points
 
 -- plugin handler for HandyNotes
 function LunarFestival:OnEnter(mapFile, coord)
-	local tooltip = self:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
-
 	if self:GetCenter() > UIParent:GetCenter() then -- compare X coordinate
-		tooltip:SetOwner(self, "ANCHOR_LEFT")
+		GameTooltip:SetOwner(self, "ANCHOR_LEFT")
 	else
-		tooltip:SetOwner(self, "ANCHOR_RIGHT")
+		GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
 	end
 
 	local point = points[mapFile] and points[mapFile][coord]
 	local nameOfElder = GetAchievementCriteriaInfo(point[2], point[3])
 
-	tooltip:SetText(nameOfElder)
+	GameTooltip:SetText(nameOfElder)
 
 	if notes[point[1]] then
-		tooltip:AddLine(notes[point[1]])
-		tooltip:AddLine(" ")
+		GameTooltip:AddLine(notes[point[1]])
+		GameTooltip:AddLine(" ")
 	end
 
 	if TomTom then
-		tooltip:AddLine("Right-click to set a waypoint.", 1, 1, 1)
-		tooltip:AddLine("Control-Right-click to set waypoints to every Elder.", 1, 1, 1)
+		GameTooltip:AddLine("Right-click to set a waypoint.", 1, 1, 1)
+		GameTooltip:AddLine("Control-Right-click to set waypoints to every Elder.", 1, 1, 1)
 	end
 
-	tooltip:Show()
+	GameTooltip:Show()
 end
 
 function LunarFestival:OnLeave()
-	if self:GetParent() == WorldMapButton then
-		WorldMapTooltip:Hide()
-	else
 		GameTooltip:Hide()
-	end
 end
 
 
