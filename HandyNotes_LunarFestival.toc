@@ -1,11 +1,12 @@
 ## Interface: 80200
 ## Title: HandyNotes_LunarFestival
 ## Notes: Displays the locations of Lunar Festival elders.
-## Author: Ethan Centaurai
+## Author: Ravendwyr
 ## Version: @project-version@
 ## X-Category: Map & Minimap
 ## SavedVariables: HandyNotes_LunarFestivalDB
 ## RequiredDeps: HandyNotes
+## X-Curse-Project-ID: 45902
 
 Core.lua
 Data.lua
