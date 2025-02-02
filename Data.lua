@@ -319,3 +319,51 @@ points[249] = { -- "Uldum"
 points[205] = { -- "VashjirRuins"
 	[57268615] = { 29738, 6006, 8 }, -- Elder Moonlance
 }
+
+
+----------------------
+-- The Dragon Isles --
+----------------------
+points[2022] = {
+	[46703094] = { 73848, 17321, 1 }, -- Iskaara Elder Shomkol
+	[44306379] = { 73716, 17321, 2 }, -- Aylaag Elder
+}
+
+points[2023] = {
+	[83934803] = { 73172, 17321, 3 }, -- Shikaar Elder
+	[58393146] = { 73717, 17321, 4 }, -- Ohn'ir Elder
+}
+
+points[2024] = {
+	[12894905] = { 73858, 17321, 5 }, -- Iskaara Elder Nemaglek
+	[67424949] = { 73860, 17321, 6 }, -- Elder Dekidig
+}
+
+points[2025] = {
+	[54864337] = { 73859, 17321, 7 }, -- Iskaara Elder Sik'ek
+	[50056654] = { 73861, 17321, 8 }, -- Elder Razlok
+}
+
+
+----------------
+-- Khaz Algar --
+----------------
+points[2248] = {
+	[40908740] = { 85929, 41130, 1 }, -- Archivist Rubbleglint
+	[48621396] = { 85930, 41130, 2 }, -- Archivist Coppermoss
+}
+
+points[2214] = {
+	[48916730] = { 85931, 41130, 3 }, -- Archivist Farolt
+	[67295298] = { 85932, 41130, 4 }, -- Archivist Silsigra
+}
+
+points[2215] = {
+	[25885193] = { 85933, 41130, 5 }, -- Elder Knythall
+	[66274628] = { 85934, 41130, 6 }, -- Elder Swornvow
+}
+
+points[2255] = {
+	[66908554] = { 85935, 41130, 7 }, -- Elder Ikk'zivan
+	[46835720] = { 85936, 41130, 8 }, -- Elder Ikk'xataz
+}

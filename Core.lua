@@ -29,6 +29,8 @@ local continents = {
 	[875] = true, -- Zandalar
 	[876] = true, -- Kul Tiras
 	[947] = true, -- Azeroth
+	[1978] = true, -- Dragon Isles
+	[2274] = true, -- Khaz Algar
 }
 
 local notes = {
@@ -43,6 +45,7 @@ local notes = {
 	[8715]  = "Speak to Zidormi in Darkshore to gain access to Teldrassil.",
 	[8718]  = "Speak to Zidormi in Darkshore to gain access to Darnassus.",
 	[8721]  = "Speak to Zidormi in Darkshore to gain access to Lor'danel.",
+	[8722]  = "Enter the cave at 65.3 38.6.", -- Elder Meadowrun, Western Plaguelands
 	[8727]  = "Inside the dungeon.", -- Elder Farwhisper, Stratholme
 	[13017] = "Inside the dungeon.", -- Elder Jarten, Utgarde Keep
 	[13021] = "Inside the dungeon.", -- Elder Igasho, The Nexus
