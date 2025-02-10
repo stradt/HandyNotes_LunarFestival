@@ -47,7 +47,7 @@ points[23] = { -- "EasternPlaguelands"
 }
 
 points[37] = { -- "Elwynn"
-	[34565026] = { 8646, 915, 3 }, -- Elder Hammershout
+	[32135280] = { 8646, 915, 3 }, -- Elder Hammershout
 	[39796367] = { 8649, 912, 3 }, -- Elder Stormbrow
 }
 
